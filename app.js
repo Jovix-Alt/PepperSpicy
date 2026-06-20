@@ -21,7 +21,8 @@ function fillInfo() {
   $("#currency-note").textContent = `All prices in ${restaurant.currency}. ASP = as per market price. Menu evolves with the seasons.`;
 
   document.querySelectorAll("[data-phone]").forEach(el => {
-    el.href = phoneHref(restaurant.phones[0]);
+    el.href = "https://wa.me/971558841776";
+    el.target = "_blank";
   });
   $("#phone-main").textContent = restaurant.phones[0];
 }
