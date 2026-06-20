@@ -701,22 +701,30 @@ footer {
     background:#e60023;
     color:white;
 
-    padding:12px 24px;
-
+    padding:10px 18px;
     border-radius:999px;
 
     font-weight:600;
-    font-size:0.95rem;
+    font-size:0.9rem;
+
+    white-space:nowrap;
 
     box-shadow:0 8px 20px rgba(230,0,35,.25);
-
     transition:all .3s ease;
 }
 
 .btn-order:hover{
     background:#ff173c;
-
     transform:translateY(-2px);
+}
+@media (max-width: 768px){
 
-    box-shadow:0 12px 30px rgba(230,0,35,.35);
+    .btn-order{
+        padding:8px 14px;
+        font-size:0.8rem;
+    }
+
+    .btn-order span{
+        display:none;
+    }
 }
